@@ -1,5 +1,7 @@
+#include <bits/stdc++.h> 
 void selectionSort(vector<int>& arr, int n)
 {   
+   
    for(int i=0; i< n-1; i++)
    {
        int mini = i;
@@ -7,10 +9,9 @@ void selectionSort(vector<int>& arr, int n)
        {
            if(arr[j] < arr[mini])
            {
-               swap(arr[j], arr[mini]);
-               mini =j;
+               mini = j;
            }
        }
-       
+       swap(arr[i], arr[mini]);
    }
 }
